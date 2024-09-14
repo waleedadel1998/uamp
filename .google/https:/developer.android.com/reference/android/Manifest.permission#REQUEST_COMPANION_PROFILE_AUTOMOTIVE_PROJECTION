@@ -1,0 +1,7 @@
+<manifest ...>
+    ...
+        <uses-feature
+                android:name="android.hardware.type.automotive"
+                        android:required="true" />
+                            ...
+                            </manifest>

@@ -4,7 +4,14 @@
 # End users may safely ignore this file. It has no relevance to other systems.
 ---
 status:       PUBLISHED
-technologies: [Android, Android Auto, Android Automotive OS, Android Wear]
+technologies: Android, <manifest ...>
+    ...
+        <uses-feature
+                android:name="android.hardware.type.automotive"
+                        android:required="true" />
+                            ...
+                            </manifest>
+                           ]
 categories:   [Getting Started, Media, UI]
 languages:    [Kotlin]
 solutions:    [Mobile]
@@ -25,3 +32,10 @@ apiRefs:
   - android:com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector
 
 license: apache2-android
+<manifest ...>
+    ...
+        <uses-feature
+                android:name="android.hardware.type.automotive"
+                        android:required="true" />
+                            ...
+                            </manifest>
